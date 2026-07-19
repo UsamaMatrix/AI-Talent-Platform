@@ -1,4 +1,5 @@
 """Redis async client factory."""
+
 from redis.asyncio import Redis, from_url
 
 from src.core.config import get_settings

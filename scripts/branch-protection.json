@@ -1,0 +1,15 @@
+{
+  "required_status_checks": {
+    "strict": true,
+    "contexts": ["Backend CI / api", "Backend CI / worker", "Frontend CI / web"]
+  },
+  "enforce_admins": false,
+  "required_pull_request_reviews": {
+    "required_approving_review_count": 0,
+    "dismiss_stale_reviews": true
+  },
+  "restrictions": null,
+  "allow_force_pushes": false,
+  "allow_deletions": false,
+  "required_conversation_resolution": true
+}

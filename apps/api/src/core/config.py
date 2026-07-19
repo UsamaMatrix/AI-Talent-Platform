@@ -1,4 +1,5 @@
 """Application configuration loaded from environment variables."""
+
 from functools import lru_cache
 
 from pydantic import Field
@@ -8,8 +9,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    # API
-    api_host: str = "0.0.0.0"  # noqa: S104
+    # API — default to localhost; Docker Compose overrides with API_HOST=0.0.0.0
+    api_host: str = "127.0.0.1"
     api_port: int = 8000
     api_debug: bool = False
     api_secret_key: str = Field(..., min_length=32)
@@ -37,4 +38,4 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    return Settings()  # type: ignore[call-arg]
+    return Settings()

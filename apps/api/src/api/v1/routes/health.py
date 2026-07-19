@@ -1,5 +1,6 @@
 """Health and readiness endpoints."""
-from fastapi import APIRouter, Depends  # noqa: B008
+
+from fastapi import APIRouter, Depends
 from redis.asyncio import Redis
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -19,8 +20,8 @@ async def health() -> HealthResponse:
 
 @router.get("/ready", response_model=HealthResponse, summary="Readiness probe")
 async def ready(
-    db: AsyncSession = Depends(get_db),  # noqa: B008
-    redis: Redis = Depends(get_redis),  # noqa: B008
+    db: AsyncSession = Depends(get_db),
+    redis: Redis = Depends(get_redis),
 ) -> HealthResponse:
     deps: list[DependencyHealth] = []
 

@@ -1,4 +1,5 @@
 """Consistent error envelope used across all API responses."""
+
 from pydantic import BaseModel
 
 
