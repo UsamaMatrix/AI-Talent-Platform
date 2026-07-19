@@ -14,17 +14,18 @@ The AI Talent Platform is a modular, production-oriented system for AI-assisted 
 
 | Module | Status |
 |---|---|
-| Foundation (API, worker, web, infra) | ✅ In progress |
-| Resume Intelligence | 🗓 Planned |
-| AI Recruiter | 🗓 Planned |
-| Coding Interview | 🗓 Planned |
-| Voice Interview | 🗓 Planned |
-| AI Evaluation | 🗓 Planned |
-| Prompt Evaluation | 🗓 Planned |
-| Agent Playground | 🗓 Planned |
-| Interview Dashboard | 🗓 Planned |
-| AI Resume Optimizer | 🗓 Planned |
-| AI Job Matcher | 🗓 Planned |
+| Foundation (API, worker, web, infra) | ✅ Beta |
+| Authentication & RBAC | 🚧 In Development |
+| Resume Intelligence | 📋 Planned |
+| AI Recruiter | 📋 Planned |
+| Coding Interview | 📋 Planned |
+| Voice Interview | 📋 Planned |
+| AI Evaluation | 📋 Planned |
+| Prompt Evaluation | 📋 Planned |
+| Agent Playground | 📋 Planned |
+| Interview Dashboard | 📋 Planned |
+| AI Resume Optimizer | 📋 Planned |
+| AI Job Matcher | 📋 Planned |
 
 ---
 
