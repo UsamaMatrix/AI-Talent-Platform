@@ -56,8 +56,11 @@ jobs:
       - name: Install dependencies
         run: uv pip install --system -e ".[dev]"
 
-      - name: Format check
-        run: ruff format --check src tests
+      - name: Format
+        run: ruff format src tests
+
+      - name: Check no formatting diff
+        run: git diff --exit-code
 
       - name: Lint
         run: ruff check src tests
@@ -98,8 +101,11 @@ jobs:
       - name: Install dependencies
         run: uv pip install --system -e ".[dev]"
 
-      - name: Format check
-        run: ruff format --check src tests
+      - name: Format
+        run: ruff format src tests
+
+      - name: Check no formatting diff
+        run: git diff --exit-code
 
       - name: Lint
         run: ruff check src tests
