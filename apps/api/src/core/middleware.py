@@ -1,9 +1,10 @@
 """Correlation ID middleware — injects a request-scoped ID into every log."""
 import uuid
 from collections.abc import Callable
+
+import structlog
 from fastapi import Request, Response
 from starlette.middleware.base import BaseHTTPMiddleware
-import structlog
 
 CORRELATION_ID_HEADER = "X-Correlation-ID"
 
