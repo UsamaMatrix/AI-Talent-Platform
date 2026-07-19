@@ -1,4 +1,5 @@
 """Tests for worker tasks."""
+
 from unittest.mock import MagicMock
 
 from src.tasks.health import health_check

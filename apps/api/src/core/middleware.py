@@ -1,4 +1,5 @@
 """Correlation ID middleware — injects a request-scoped ID into every log."""
+
 import uuid
 from collections.abc import Callable
 

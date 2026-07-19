@@ -1,4 +1,5 @@
 """Health and readiness response schemas."""
+
 from enum import StrEnum
 
 from pydantic import BaseModel

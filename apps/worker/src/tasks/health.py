@@ -1,4 +1,5 @@
 """Health check task — verifies worker is alive."""
+
 import structlog
 from celery import shared_task
 

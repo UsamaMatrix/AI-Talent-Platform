@@ -1,4 +1,5 @@
 """Health and readiness endpoints."""
+
 from fastapi import APIRouter, Depends
 from redis.asyncio import Redis
 from sqlalchemy import text
