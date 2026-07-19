@@ -1,0 +1,37 @@
+name: Feature Request
+description: Propose a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - Foundation
+        - Resume Intelligence
+        - AI Recruiter
+        - Coding Interview
+        - Voice Interview
+        - AI Evaluation
+        - Prompt Evaluation
+        - Agent Playground
+        - Interview Dashboard
+        - AI Resume Optimizer
+        - AI Job Matcher
+        - Infrastructure
+        - Other
+    validations:
+      required: true
