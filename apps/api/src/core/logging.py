@@ -31,4 +31,4 @@ def configure_logging(log_level: str = "INFO", log_format: str = "json") -> None
 
 
 def get_logger(name: str) -> structlog.BoundLogger:
-    return structlog.get_logger(name)
+    return structlog.get_logger(name)  # type: ignore[return-value]
