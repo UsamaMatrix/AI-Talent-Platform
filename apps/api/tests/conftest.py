@@ -3,6 +3,7 @@ from unittest.mock import patch
 
 import pytest
 
+
 # Patch settings before any import resolves them
 @pytest.fixture(autouse=True)
 def patch_settings():

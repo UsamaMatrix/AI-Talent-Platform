@@ -47,14 +47,15 @@ src = ["src"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "UP", "S", "B", "A", "C4", "PT", "RUF"]
-ignore = ["S101", "B008"]
+ignore = ["S101"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["src"]
-force-sort-within-sections = false
+force-sort-within-sections = true
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["S101"]
+"src/api/**/routes/*.py" = ["B008"]
+"tests/**/*.py" = ["S101"]
 
 [tool.mypy]
 python_version = "3.12"

@@ -37,6 +37,12 @@ Thumbs.db
 .idea/
 *.swp
 
+# Amazon Q chat logs
+q-dev-chat-*.md
+
+# Next.js generated
+apps/web/next-env.d.ts
+
 # Secrets
 *.pem
 *.key
