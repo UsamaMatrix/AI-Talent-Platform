@@ -1,4 +1,5 @@
 """Alembic environment — async SQLAlchemy."""
+
 import asyncio
 from logging.config import fileConfig
 
@@ -6,6 +7,7 @@ from alembic import context
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from src.core.config import get_settings
+from src.domain.models import auth as _auth_models  # noqa: F401 — registers models with Base
 from src.infrastructure.db.session import Base
 
 config = context.config
